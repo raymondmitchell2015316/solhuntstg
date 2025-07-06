@@ -1,0 +1,24 @@
+services:
+  - type: web
+    name: telegram-airdrop-bot
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node bot.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: BOT_TOKEN
+        sync: false
+      - key: INFURA_PROJECT_ID
+        sync: false
+      - key: BOT_NAME
+        value: "Airdrop Hunter Bot"
+      - key: BOT_USERNAME
+        value: "@aidroperbot"
+      - key: CLAIM_URL
+        value: "https://claim.hunter.xyz"
+      - key: MIN_AIRDROP_AMOUNT
+        value: "5000"
+      - key: MAX_AIRDROP_AMOUNT
+        value: "20000"

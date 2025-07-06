@@ -1,0 +1,25 @@
+{
+  "name": "telegram-airdrop-bot",
+  "version": "1.0.0",
+  "description": "Telegram bot for cryptocurrency wallet analysis and airdrop detection",
+  "main": "render_production_bot.js",
+  "scripts": {
+    "start": "node render_production_bot.js",
+    "dev": "node bot.js",
+    "test": "node test.js",
+    "render": "node render_production_bot.js"
+  },
+  "dependencies": {
+    "telegraf": "^4.16.3",
+    "web3": "^4.8.0",
+    "axios": "^1.6.8",
+    "pg": "^8.11.5",
+    "node-cron": "^3.0.3",
+    "dotenv": "^16.4.5"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "author": "Your Name",
+  "license": "MIT"
+}
